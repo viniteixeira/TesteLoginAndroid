@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Não mudar, shape da sombra do botão-->
+    <item>
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:radius="5dp" />
+            <solid
+                android:color="#cccccc" />
+        </shape>
+    </item>
+    <!-- Customizar cor -->
+    <item
+        android:bottom="2px">
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:radius="5dp" />
+            <solid
+                android:color="@android:color/darker_gray" />
+        </shape>
+    </item>
+</layer-list>

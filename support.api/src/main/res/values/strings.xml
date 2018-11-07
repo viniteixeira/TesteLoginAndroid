@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Support API</string>
+    <string name="string_empty"></string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tela_bloqueio">TelaBloqueio</string>
+
+    <string-array name="accordion_risco">
+        <item>GRUPOS DE RISCO</item>
+    </string-array>
+
+    <string-array name="accordion_indicacao">
+        <item>INDICAÇÕES</item>
+    </string-array>
+
+    <string-array name="accordion_contra">
+        <item>CONTRAINDICAÇÕES</item>
+    </string-array>
+
+    <string-array name="accordion_posologia">
+        <item>POSOLOGIA</item>
+    </string-array>
+
+    <string-array name="outras_infos">
+        <item>OUTRAS INFOS</item>
+    </string-array>
+
+    <string-array name="accordion_outros">
+        <item>OUTROS DADOS CIENTÍFICOS</item>
+    </string-array>
+
+    <string-array name="accordion_monitorar">
+        <item>MONITORAR</item>
+    </string-array>
+
+    <string-array name="accordion_minimonografia">
+        <item>MINIMONOGRAFIA</item>
+    </string-array>
+
+    <string-array name="accordion_componentes">
+        <item>COMPONENTES</item>
+    </string-array>
+
+    <string-array name="accordion_farmacoconetica">
+        <item>FARMACOCINÉTICA</item>
+    </string-array>
+
+    <string-array name="accordion_farmacologia">
+        <item>FARMACOLOGIA</item>
+    </string-array>
+
+    <string-array name="accordion_reacoes">
+        <item>REAÇÕES ADVERSAS</item>
+    </string-array>
+
+    <integer-array name="accordion_visibility">
+        <item>0</item>
+    </integer-array>
+
+</resources>
