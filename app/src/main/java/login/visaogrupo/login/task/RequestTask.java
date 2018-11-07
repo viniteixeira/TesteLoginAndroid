@@ -6,10 +6,11 @@ import android.util.Log;
 
 import login.visaogrupo.login.HTTPCallback;
 import support.api.http.HTTP;
+import support.api.http.Metodo;
 import support.api.utils.Criptho;
 
 
-public class RequestTask extends AsyncTask<String, Void, Boolean> {
+public class RequestTask extends AsyncTask<Void, Void, Boolean> {
 
     public static final byte[] KEY_CRIPTY = "oSENHOR3oMeUp4sT0rN4DaMeF4Lt@ra!".getBytes();
     public static final byte[] IV_CRIPTY = "?S4LM0S_23:V3R_1".getBytes();
@@ -33,7 +34,7 @@ public class RequestTask extends AsyncTask<String, Void, Boolean> {
     }
 
     @Override
-    protected Boolean doInBackground(String... strings) {
+    protected Boolean doInBackground(Void... voids) {
         try {
 
             HTTP http = new HTTP(mContext, mUrl);
@@ -43,11 +44,12 @@ public class RequestTask extends AsyncTask<String, Void, Boolean> {
             Log.i("Body: ", mBody);
             Log.i("Body Encrypted:", bodyEncripyted);
             http.setTimeout(15000);
+            http.setMetodo(Metodo.POST);
             http.connect(bodyEncripyted);
             String response = http.getRetorno();
             Log.i("Response:", response);
             mCallback.onSucess(response);
-
+            return true;
         } catch (Exception err) {
             err.printStackTrace();
         }

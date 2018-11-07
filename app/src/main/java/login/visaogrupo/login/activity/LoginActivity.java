@@ -60,7 +60,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             body.put("Email", edtLogin.getText().toString());
             body.put("Senha", edtSenha.getText().toString());
 
-            new RequestTask(this,"http://wwwi.visaogrupo.com.br/ws/loginteste", body.toString(), this);
+            new RequestTask(this,"http://wwwi.visaogrupo.com.br/ws/loginteste", body.toString(), this).execute();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -69,6 +69,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onSucess(String response) {
-
+        Log.i("onSucess","AEHOO");
     }
 }
